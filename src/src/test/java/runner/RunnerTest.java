@@ -10,5 +10,4 @@ import org.junit.runner.RunWith;
                     glue = "steps",
                     tags = { "~@ignore", "@lookforusers" }
                 )
-public class RunnerTest {
-}
+public class RunnerTest{}

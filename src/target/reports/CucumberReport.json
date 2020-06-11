@@ -1,9 +1,9 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
+        "line": 4,
         "name": "User already have access to http://reqres API",
         "description": "",
         "type": "background",
@@ -13,7 +13,7 @@
         "before": [
           {
             "result": {
-              "duration": 71000,
+              "duration": 87400,
               "status": "passed"
             },
             "match": {
@@ -21,14 +21,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "User want to see all users",
+        "line": 6,
+        "name": "User want to delete all users",
         "description": "",
-        "id": "get-all-users;user-want-to-see-all-users",
+        "id": "delete-all-users;user-want-to-delete-all-users",
         "after": [
           {
             "result": {
-              "duration": 15100,
+              "duration": 36600,
               "status": "passed"
             },
             "match": {
@@ -52,22 +52,22 @@
               ""
             ],
             "result": {
-              "duration": 2063823000,
+              "duration": 2154601000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User click on search button",
+            "line": 7,
+            "name": "User click on list all button",
             "match": {
-              "location": "GetAllUsersSteps.userClickOnSearchButton()"
+              "location": "GetUsersSteps.userClickOnListAllButton()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3389400,
+              "duration": 3462300,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "User should see status code 200",
             "match": {
               "arguments": [
@@ -76,9 +76,471 @@
                   "offset": 28
                 }
               ],
-              "location": "GetAllUsersSteps.userShouldSeeStatusCode(int)"
+              "location": "GetUsersSteps.userShouldSeeStatusCode(int)"
             },
             "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User already have access to http://reqres API",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 39400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "User want to get a specific register",
+        "description": "",
+        "id": "delete-all-users;user-want-to-get-a-specific-register;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 8200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 73900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User look for a single register",
+            "match": {
+              "location": "GetUsersSteps.userLookForASingleRegister()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4253800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enter id as \"1013\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1013",
+                  "offset": 18
+                }
+              ],
+              "location": "GetUsersSteps.userEnterIdAs(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "METHOD: [ DELETE (Request) ]",
+              "Endpoint: [ https://reqres.in/api/users/1013 ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [  ]",
+              "------------------------------------",
+              "METHOD: [ DELETE (Response) ]",
+              "Status Code: [ 204 ]",
+              "Response: [  ]",
+              ""
+            ],
+            "result": {
+              "duration": 613528000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User click on deleteUser button",
+            "match": {
+              "location": "DeleteUsersSteps.userClickOnDeleteUserButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should see status code 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 28
+                }
+              ],
+              "location": "GetUsersSteps.userShouldSeeStatusCode(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@lookforusers"
+          }
+        ]
+      }
+    ],
+    "name": "Delete all users",
+    "description": "",
+    "id": "delete-all-users",
+    "keyword": "Feature",
+    "uri": "DeleteUsers.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@lookforusers"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User already have access to http://reqres API",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 16500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "User want to see all users",
+        "description": "",
+        "id": "get-all-users;user-want-to-see-all-users",
+        "after": [
+          {
+            "result": {
+              "duration": 7800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "METHOD: [ GET (Request) ]",
+              "Endpoint: [ https://reqres.in/api/users ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [  ]",
+              "------------------------------------",
+              "METHOD: [ GET (Response) ]",
+              "Status Code: [ 200 ]",
+              "Response: [ {\"page\":1,\"per_page\":6,\"total\":12,\"total_pages\":2,\"data\":[{\"id\":1,\"email\":\"george.bluth@reqres.in\",\"first_name\":\"George\",\"last_name\":\"Bluth\",\"avatar\":\"https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg\"},{\"id\":2,\"email\":\"janet.weaver@reqres.in\",\"first_name\":\"Janet\",\"last_name\":\"Weaver\",\"avatar\":\"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg\"},{\"id\":3,\"email\":\"emma.wong@reqres.in\",\"first_name\":\"Emma\",\"last_name\":\"Wong\",\"avatar\":\"https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg\"},{\"id\":4,\"email\":\"eve.holt@reqres.in\",\"first_name\":\"Eve\",\"last_name\":\"Holt\",\"avatar\":\"https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg\"},{\"id\":5,\"email\":\"charles.morris@reqres.in\",\"first_name\":\"Charles\",\"last_name\":\"Morris\",\"avatar\":\"https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg\"},{\"id\":6,\"email\":\"tracey.ramos@reqres.in\",\"first_name\":\"Tracey\",\"last_name\":\"Ramos\",\"avatar\":\"https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg\"}],\"ad\":{\"company\":\"StatusCode Weekly\",\"url\":\"http://statuscode.org/\",\"text\":\"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.\"}} ]",
+              ""
+            ],
+            "result": {
+              "duration": 152161000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on list all button",
+            "match": {
+              "location": "GetUsersSteps.userClickOnListAllButton()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 58100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should see status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "GetUsersSteps.userShouldSeeStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User already have access to http://reqres API",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "User want to get a specific register",
+        "description": "",
+        "id": "get-all-users;user-want-to-get-a-specific-register;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 11600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 18800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User look for a single register",
+            "match": {
+              "location": "GetUsersSteps.userLookForASingleRegister()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 45600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enter id as \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 18
+                }
+              ],
+              "location": "GetUsersSteps.userEnterIdAs(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "METHOD: [ GET (Request) ]",
+              "Endpoint: [ https://reqres.in/api/users/2 ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [  ]",
+              "------------------------------------",
+              "METHOD: [ GET (Response) ]",
+              "Status Code: [ 200 ]",
+              "Response: [ {\"data\":{\"id\":2,\"email\":\"janet.weaver@reqres.in\",\"first_name\":\"Janet\",\"last_name\":\"Weaver\",\"avatar\":\"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg\"},\"ad\":{\"company\":\"StatusCode Weekly\",\"url\":\"http://statuscode.org/\",\"text\":\"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.\"}} ]",
+              ""
+            ],
+            "result": {
+              "duration": 146988000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User click on getUser button",
+            "match": {
+              "location": "GetUsersSteps.userClickOnGetUserButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should see status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "GetUsersSteps.userShouldSeeStatusCode(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@lookforusers"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User already have access to http://reqres API",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 23000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "User want to get a specific register",
+        "description": "",
+        "id": "get-all-users;user-want-to-get-a-specific-register;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 10800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 26700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User look for a single register",
+            "match": {
+              "location": "GetUsersSteps.userLookForASingleRegister()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 118600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enter id as \"23\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "23",
+                  "offset": 18
+                }
+              ],
+              "location": "GetUsersSteps.userEnterIdAs(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "METHOD: [ GET (Request) ]",
+              "Endpoint: [ https://reqres.in/api/users/23 ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [  ]",
+              "------------------------------------",
+              "METHOD: [ GET (Response) ]",
+              "Status Code: [ 404 ]",
+              "Response: [ {} ]",
+              ""
+            ],
+            "result": {
+              "duration": 149133300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User click on getUser button",
+            "match": {
+              "location": "GetUsersSteps.userClickOnGetUserButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should see status code 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 28
+                }
+              ],
+              "location": "GetUsersSteps.userShouldSeeStatusCode(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@lookforusers"
           }
         ]
       }
@@ -87,6 +549,108 @@
     "description": "",
     "id": "get-all-users",
     "keyword": "Feature",
-    "uri": "GetAllUsers.feature"
+    "uri": "GetUsers.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@lookforusers"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User already have access to http://reqres API",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "User want to post all users",
+        "description": "",
+        "id": "delete-all-users;user-want-to-post-all-users",
+        "after": [
+          {
+            "result": {
+              "duration": 7900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "METHOD: [ GET (Request) ]",
+              "Endpoint: [ https://reqres.in/api/users ]",
+              "Headers: [ Accept\u003dapplication/json, application/javascript, text/javascript\nContent-Type\u003dapplication/json; charset\u003dUTF-8 ]",
+              "Body - Request: [  ]",
+              "------------------------------------",
+              "METHOD: [ GET (Response) ]",
+              "Status Code: [ 200 ]",
+              "Response: [ {\"page\":1,\"per_page\":6,\"total\":12,\"total_pages\":2,\"data\":[{\"id\":1,\"email\":\"george.bluth@reqres.in\",\"first_name\":\"George\",\"last_name\":\"Bluth\",\"avatar\":\"https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg\"},{\"id\":2,\"email\":\"janet.weaver@reqres.in\",\"first_name\":\"Janet\",\"last_name\":\"Weaver\",\"avatar\":\"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg\"},{\"id\":3,\"email\":\"emma.wong@reqres.in\",\"first_name\":\"Emma\",\"last_name\":\"Wong\",\"avatar\":\"https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg\"},{\"id\":4,\"email\":\"eve.holt@reqres.in\",\"first_name\":\"Eve\",\"last_name\":\"Holt\",\"avatar\":\"https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg\"},{\"id\":5,\"email\":\"charles.morris@reqres.in\",\"first_name\":\"Charles\",\"last_name\":\"Morris\",\"avatar\":\"https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg\"},{\"id\":6,\"email\":\"tracey.ramos@reqres.in\",\"first_name\":\"Tracey\",\"last_name\":\"Ramos\",\"avatar\":\"https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg\"}],\"ad\":{\"company\":\"StatusCode Weekly\",\"url\":\"http://statuscode.org/\",\"text\":\"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.\"}} ]",
+              ""
+            ],
+            "result": {
+              "duration": 164570400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on list all button",
+            "match": {
+              "location": "GetUsersSteps.userClickOnListAllButton()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 59300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should see status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "GetUsersSteps.userShouldSeeStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Delete all users",
+    "description": "",
+    "id": "delete-all-users",
+    "keyword": "Feature",
+    "uri": "PostUsers.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@lookforusers"
+      }
+    ]
   }
 ]
