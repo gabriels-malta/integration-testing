@@ -21,6 +21,7 @@ public class PostUsersSteps {
         Assert.assertEquals(statusCode, response);
     }
 
+
     @When("^User enter post id as \"([^\"]*)\"$")
     public void userEnterPostIdAs(String userId) throws Throwable {
         ReqRes.storeUserId(userId);
