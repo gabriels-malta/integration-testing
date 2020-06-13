@@ -51,7 +51,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                22,
+                70,
                 0,
                 0,
                 0,
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 22) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 70) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,7 +107,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                4,
+                11,
                 0
             ],
             backgroundColor: [
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 11) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -157,7 +157,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   2,
+                   4,
                    0
                ],
                backgroundColor: [
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -234,7 +234,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>integration-testing - System Testing Execution Report</td>
               <td>1</td>
-            <td>13 jun 2020, 13:52</td>
+            <td>13 jun 2020, 17:41</td>
     </tr>
   </tbody>
 </table>
@@ -331,18 +331,35 @@ $(document).ready(function() {
           <tr>
         <td class="tagname"><a href="report-feature_CreateProcess-feature.html">Create a new process</a></td>
         
-        <td      class="passed"    >12</td>
+        <td      class="passed"    >15</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">12</td>
+        <td class="total">15</td>
 
-        <td  class="passed"    >1</td>
+        <td  class="passed"    >2</td>
         <td >0</td>
-        <td class="total">1</td>
+        <td class="total">2</td>
 
-        <td class="duration" data-value="2511230000">2.511</td>
+        <td class="duration" data-value="3337385500">3.337</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_DeleteProcess-feature.html">Create a new process</a></td>
+        
+        <td      class="passed"    >18</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">18</td>
+
+        <td  class="passed"    >3</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td class="duration" data-value="1130411300">1.130</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -359,7 +376,24 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="1951063400">1.951</td>
+        <td class="duration" data-value="2199074400">2.199</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_UpdateProcess-feature.html">Update an existing process</a></td>
+        
+        <td      class="passed"    >27</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">27</td>
+
+        <td  class="passed"    >3</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td class="duration" data-value="1034182800">1.034</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
@@ -367,19 +401,19 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-            <td>22</td>
+            <td>70</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>22</td>
+      <td>70</td>
 
-      <td>4</td>
+      <td>11</td>
       <td>0</td>
-      <td>4</td>
+      <td>11</td>
 
-      <td class="duration">4.462</td>
-      <td>2</td>
+      <td class="duration">7.701</td>
+      <td>4</td>
     </tr>
     <tr>
       <td></td>

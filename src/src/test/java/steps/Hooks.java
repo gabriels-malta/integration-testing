@@ -3,6 +3,7 @@ package steps;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import definition.ProcessAPI;
 
 
 import java.net.MalformedURLException;
@@ -17,6 +18,7 @@ public class Hooks {
     @Before
     public void beforeScenario(Scenario sc){
         Hooks.scenario = sc;
+        ProcessAPI.clearFields();
     }
 
     @After

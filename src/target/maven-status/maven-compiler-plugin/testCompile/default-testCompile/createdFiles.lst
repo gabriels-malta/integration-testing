@@ -1,7 +1,7 @@
 steps\GeneralSteps.class
-support\RESTSupport.class
 definition\ProcessAPI.class
-steps\CreateSteps.class
 runner\RunnerTest.class
-steps\Hooks.class
 steps\GetSteps.class
+support\RESTSupport.class
+steps\CreateSteps.class
+steps\Hooks.class

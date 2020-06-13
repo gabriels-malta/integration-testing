@@ -6,6 +6,7 @@ public class ProcessAPI {
     private static String API_URL = "http://agapito-server.herokuapp.com/processos/";
     private static LazyMap fieldsJson = new LazyMap();
     private static String ProcessId;
+    private static String ProcessValue;
 
     public static String getEndpoint() {
         return API_URL;
@@ -29,5 +30,13 @@ public class ProcessAPI {
 
     public static String getProcessId() {
         return ProcessId;
+    }
+
+    public static void setProcessValue(String processValue) {
+        ProcessValue = processValue;
+    }
+
+    public static String getProcessValue() {
+        return ProcessValue;
     }
 }

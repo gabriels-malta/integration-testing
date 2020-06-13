@@ -1,3 +1,4 @@
+@processTest
 Feature: Get all process
 
   Background: User already have access to http://agapito-server.herokuapp.com

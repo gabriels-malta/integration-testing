@@ -1,3 +1,4 @@
+@processTest
 Feature: Create a new process
 
   Background: User already have access to http://agapito-server.herokuapp.com
@@ -15,3 +16,8 @@ Feature: Create a new process
     And User fill field status with value "789"
     And User click on save button
     Then User should see status code 201
+
+  Scenario: User want check updated value
+    Given User already has the process id previously created
+    When User click on search button
+    Then User should see status code 200

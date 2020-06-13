@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.RunnerTest" time="4.882" tests="26" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.RunnerTest" time="8.213" tests="81" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Users\gabri\.jdks\azul-1.8.0_252\jre\bin"/>
@@ -64,7 +64,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given User already in new process page" classname="Scenario: User want to create a new process" time="0.001"/>
+  <testcase name="Given User already in new process page" classname="Scenario: User want to create a new process" time="0.002"/>
   <testcase name="And User fill field vara with value &quot;789&quot;" classname="Scenario: User want to create a new process" time="0"/>
   <testcase name="And User fill field numero_processo with value &quot;789&quot;" classname="Scenario: User want to create a new process" time="0"/>
   <testcase name="And User fill field natureza with value &quot;789&quot;" classname="Scenario: User want to create a new process" time="0"/>
@@ -76,7 +76,35 @@
   <testcase name="And User fill field status with value &quot;789&quot;" classname="Scenario: User want to create a new process" time="0"/>
   <testcase name="And User click on save button" classname="Scenario: User want to create a new process" time="0"/>
   <testcase name="Then User should see status code 201" classname="Scenario: User want to create a new process" time="0"/>
-  <testcase name="Scenario: User want to create a new process" classname="Scenario: User want to create a new process" time="0"/>
+  <testcase name="Scenario: User want to create a new process" classname="Scenario: User want to create a new process" time="0.001"/>
+  <testcase name="Given User already has the process id previously created" classname="Scenario: User want check updated value" time="0"/>
+  <testcase name="Given User already has the process id previously created" classname="Scenario: User want check updated value" time="0"/>
+  <testcase name="When User click on search button" classname="Scenario: User want check updated value" time="0"/>
+  <testcase name="When User click on search button" classname="Scenario: User want check updated value" time="0"/>
+  <testcase name="Then User should see status code 200" classname="Scenario: User want check updated value" time="0"/>
+  <testcase name="Scenario: User want check updated value" classname="Scenario: User want check updated value" time="0"/>
+  <testcase name="Scenario: User want check updated value" classname="Scenario: User want check updated value" time="0.001"/>
+  <testcase name="Given User already in new process page" classname="Scenario: User must create a new process to delete later" time="0"/>
+  <testcase name="And User fill field vara with value &quot;vara:999&quot;" classname="Scenario: User must create a new process to delete later" time="0"/>
+  <testcase name="And User fill field numero_processo with value &quot;numero_processo:999&quot;" classname="Scenario: User must create a new process to delete later" time="0"/>
+  <testcase name="And User fill field natureza with value &quot;natureza:999&quot;" classname="Scenario: User must create a new process to delete later" time="0"/>
+  <testcase name="And User fill field partes with value &quot;partes:999&quot;" classname="Scenario: User must create a new process to delete later" time="0"/>
+  <testcase name="And User fill field urgente with value &quot;N&quot;" classname="Scenario: User must create a new process to delete later" time="0.001"/>
+  <testcase name="And User fill field arbitramento with value &quot;N&quot;" classname="Scenario: User must create a new process to delete later" time="0"/>
+  <testcase name="And User fill field assistencia_social with value &quot;assistencia_social:999&quot;" classname="Scenario: User must create a new process to delete later" time="0"/>
+  <testcase name="And User fill field data_entrada with value &quot;06-06-2020&quot;" classname="Scenario: User must create a new process to delete later" time="0"/>
+  <testcase name="And User fill field status with value &quot;status:999&quot;" classname="Scenario: User must create a new process to delete later" time="0"/>
+  <testcase name="And User click on save button" classname="Scenario: User must create a new process to delete later" time="0"/>
+  <testcase name="Then User should see status code 201" classname="Scenario: User must create a new process to delete later" time="0"/>
+  <testcase name="Scenario: User must create a new process to delete later" classname="Scenario: User must create a new process to delete later" time="0"/>
+  <testcase name="Given User already has the process id previously created" classname="Scenario: User want delete the previously created process" time="0"/>
+  <testcase name="And User click on button delete" classname="Scenario: User want delete the previously created process" time="0"/>
+  <testcase name="Then User should see status code 204" classname="Scenario: User want delete the previously created process" time="0"/>
+  <testcase name="Scenario: User want delete the previously created process" classname="Scenario: User want delete the previously created process" time="0"/>
+  <testcase name="Given User already has the process id previously created" classname="Scenario: User want check if the entity was deleted" time="0"/>
+  <testcase name="When User click on search button" classname="Scenario: User want check if the entity was deleted" time="0"/>
+  <testcase name="Then User should see status code 404" classname="Scenario: User want check if the entity was deleted" time="0"/>
+  <testcase name="Scenario: User want check if the entity was deleted" classname="Scenario: User want check if the entity was deleted" time="0"/>
   <testcase name="Given User click on list all process button" classname="Scenario: User want to list all process" time="0"/>
   <testcase name="Then User should see status code 200" classname="Scenario: User want to list all process" time="0"/>
   <testcase name="Scenario: User want to list all process" classname="Scenario: User want to list all process" time="0"/>
@@ -90,4 +118,31 @@
   <testcase name="And User click on search button" classname="| 789789 | 404 |" time="0"/>
   <testcase name="Then User should see status code 404" classname="| 789789 | 404 |" time="0"/>
   <testcase name="| 789789 | 404 |" classname="| 789789 | 404 |" time="0"/>
+  <testcase name="Given User already in new process page" classname="Scenario: User must create a new process to update later" time="0"/>
+  <testcase name="And User fill field vara with value &quot;vara:789&quot;" classname="Scenario: User must create a new process to update later" time="0"/>
+  <testcase name="And User fill field numero_processo with value &quot;numero_processo:789&quot;" classname="Scenario: User must create a new process to update later" time="0"/>
+  <testcase name="And User fill field natureza with value &quot;natureza:789&quot;" classname="Scenario: User must create a new process to update later" time="0"/>
+  <testcase name="And User fill field partes with value &quot;partes:789&quot;" classname="Scenario: User must create a new process to update later" time="0"/>
+  <testcase name="And User fill field urgente with value &quot;N&quot;" classname="Scenario: User must create a new process to update later" time="0"/>
+  <testcase name="And User fill field arbitramento with value &quot;N&quot;" classname="Scenario: User must create a new process to update later" time="0"/>
+  <testcase name="And User fill field assistencia_social with value &quot;assistencia_social:789&quot;" classname="Scenario: User must create a new process to update later" time="0"/>
+  <testcase name="And User fill field data_entrada with value &quot;06-06-2020&quot;" classname="Scenario: User must create a new process to update later" time="0"/>
+  <testcase name="And User fill field status with value &quot;status:789&quot;" classname="Scenario: User must create a new process to update later" time="0"/>
+  <testcase name="And User click on save button" classname="Scenario: User must create a new process to update later" time="0"/>
+  <testcase name="Then User should see status code 201" classname="Scenario: User must create a new process to update later" time="0"/>
+  <testcase name="Scenario: User must create a new process to update later" classname="Scenario: User must create a new process to update later" time="0"/>
+  <testcase name="Given User already has the process id previously created" classname="Scenario: User want to update the social assistance" time="0"/>
+  <testcase name="And User fill field vara with value &quot;ATUALIZADO:789&quot;" classname="Scenario: User want to update the social assistance" time="0"/>
+  <testcase name="And User fill field numero_processo with value &quot;ATUALIZADO:789&quot;" classname="Scenario: User want to update the social assistance" time="0"/>
+  <testcase name="And User fill field natureza with value &quot;ATUALIZADO:789&quot;" classname="Scenario: User want to update the social assistance" time="0"/>
+  <testcase name="And User fill field partes with value &quot;ATUALIZADO:789&quot;" classname="Scenario: User want to update the social assistance" time="0"/>
+  <testcase name="And User fill field urgente with value &quot;S&quot;" classname="Scenario: User want to update the social assistance" time="0"/>
+  <testcase name="And User fill field arbitramento with value &quot;S&quot;" classname="Scenario: User want to update the social assistance" time="0"/>
+  <testcase name="And User fill field assistencia_social with value &quot;ATUALIZADO&quot;" classname="Scenario: User want to update the social assistance" time="0"/>
+  <testcase name="And User fill field data_entrada with value &quot;06-06-2020&quot;" classname="Scenario: User want to update the social assistance" time="0"/>
+  <testcase name="And User fill field status with value &quot;ATUALIZADO:789&quot;" classname="Scenario: User want to update the social assistance" time="0"/>
+  <testcase name="And User click on button save update" classname="Scenario: User want to update the social assistance" time="0"/>
+  <testcase name="Then User should see status code 200" classname="Scenario: User want to update the social assistance" time="0"/>
+  <testcase name="Scenario: User want to update the social assistance" classname="Scenario: User want to update the social assistance" time="0"/>
+  <testcase name="Then Response should contain &quot;ATUALIZADO:789&quot; as field vara value" classname="Scenario: User want check updated value" time="0.001"/>
 </testsuite>
